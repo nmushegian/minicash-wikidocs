@@ -1,4 +1,6 @@
 - Many cryptocurrency projects promote metrics like market cap or ROI.
 - This project is most interested in seeing *velocity* -- cash in motion.
 - One of the [[principles]] of minicash is that you shouldn't expect to make money by speculating on minicash directly, instead, you should try to build or invest into systems that produce sustainable cashflows.
-- Even though minicash has no smart contract functionality or even multisig functionality, the combination of EC threshold signatures [[tsigs]] and
+- You can
+- Even though minicash has no smart contract functionality or even multisig functionality, the combination of EC threshold signatures [[tsigs]] and external smart contract platforms means that minicash can effectively be manipulated by smart contracts, and used as a settlement layer for different crypto systems.
+-
