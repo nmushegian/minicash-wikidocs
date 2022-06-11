@@ -1,1 +1,2 @@
-- Many
+- Most crypto projects promote their market cap, transaction volume, distinct users, or any other wide variety of metrics.
+- We are most interested in seeing *velocity* -- cash moving.
