@@ -20,7 +20,8 @@
   -> [res/ticks ticks[]]
   ```
 -
-- The [[basic sync algorithm]] is the algorithm that defines the minicash system state. Full nodes that choose more efficient sync algorithms must ensure they will lead to the same view of the system state as the naive sync algorithm.
+- [[basic sync algorithm]]
+-
 - These core message types use a simple canonical chunking and merkle proof strategy to guide protocol implementers towards correctly dealing with concurrent candidates so that all [[full node]] implementations can keep up with the network as it scales up. A subset of the block merkle structure is defined as a [[tack]]
 - ```
   tack = [head neck feet]
