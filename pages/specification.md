@@ -20,7 +20,8 @@
   -> [res/ticks ticks[]]
   ```
 -
-- These core message types use a simple canonical chunking and merkle proof
+- These core message types use a simple canonical chunking and merkle proof strategy to ensure protocol implementers are correctly dealing with concurrent candidates so that all [[full node]] implementations can keep up with the network as it scales up. This
+-
 -
 - modules
 	- [[djin]] engine
