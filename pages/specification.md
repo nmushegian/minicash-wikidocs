@@ -1,6 +1,6 @@
 - Minicash is defined by specification, and has multiple implementations of [[full node]] clients.
 -
-- The specification is oriented around the core terms:
+- The specification is oriented around the core terms, [[tick]] and [[tock]]
 - ```
   tick = [moves bills]
     move = [txin indx sign]
@@ -8,7 +8,7 @@
   tock = [prev root time fuzz]
   ```
 -
-- The protocol definition also includes the core [[message types]] which all full node implementations must implement (they can also implement more efficient ones)
+- The protocol definition also includes the core [[mail types]] which all full node implementations must implement (they can also implement more efficient ones by adding more [[plug]]s to the [[dmon]])
 - ```
   <- [ask/tocks from]
   -> [res/tocks tocks[]]
