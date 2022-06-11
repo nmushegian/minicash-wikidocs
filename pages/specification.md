@@ -28,7 +28,7 @@
     feet = tickhash[][] // chunks of 1024 ticks (except last chunk)
   ```
 -
--
+- Note that this canonical chunking method depends directly on the hard-coded constants that define the minicash spec -- the maximum possible ticks per tock is 2^17, which can be chunked into 2^7 groups of 2^
 -
 -
 - modules
