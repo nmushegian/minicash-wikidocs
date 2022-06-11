@@ -1,0 +1,2 @@
+- Even though minicash has no smart contract functionality or even multisig functionality, the combination of EC threshold signatures [[tsigs]] and external smart contract platforms means that minicash can effectively be manipulated by smart contracts, and used as a settlement layer for different crypto systems.
+- One example of a threshlet is RenVM. It is a network of a few thousand validators who control assets via EC threshold signatures sharded using multi-party computation techniques.
