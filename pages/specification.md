@@ -22,10 +22,13 @@
 -
 - These core message types use a simple canonical chunking and merkle proof strategy to guide protocol implementers towards correctly dealing with concurrent candidates so that all [[full node]] implementations can keep up with the network as it scales up. A subset of the block merkle structure is defined as a `tack:`
 - ```
-  tack = [tock neck feet]
-    neck = merkhash[] // merkle nodes at depth 7
-    feet = tickhash[] 
+  tack = [head neck feet]
+    head = tockhash
+    neck = merkhash[]   // merkle nodes at depth 7, if >1024 ticks
+    feet = tickhash[][] // chunks of 1024 ticks (except last chunk)
   ```
+-
+-
 -
 -
 - modules
