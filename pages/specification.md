@@ -1,2 +1,3 @@
-- Minicash is defined by specification, and has implemented in multiple [[full node]] clients.
+- Minicash is defined by specification, and has multiple implementations of [[full node]] clients.
+-
 -
