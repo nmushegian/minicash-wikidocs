@@ -1,0 +1,2 @@
+- Minicash is defined by specification, and has implemented in multiple [[full node]] clients.
+-
