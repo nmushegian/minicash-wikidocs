@@ -1,2 +1,5 @@
 - Welcome to the minicash wiki
 -
+- Minicash is a proof of concept of many different ideas
+	- The most important concept is the power of a finalized specification
+	- Simple UTXO s
