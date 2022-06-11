@@ -8,7 +8,7 @@
   tock = [prev root time fuzz]
   ```
 -
-- The protocol definition also includes the core [[mail types]] which all full node implementations must implement (they can also implement more efficient ones by adding more [[plug]]s to the [[dmon]])
+- The protocol definition also includes the core [[mail types]] which all full node implementations must implement (they can also implement more efficient ones)
 - ```
   <- [ask/tocks from]
   -> [res/tocks tocks[]]
@@ -20,6 +20,7 @@
   -> [res/ticks ticks[]]
   ```
 -
+- The [[core sync algorithm]] is the algorithm that defines the minicash system state. Full nodes that choose more efficient sync algorithms must ensure they
 - These core message types use a simple canonical chunking and merkle proof strategy to guide protocol implementers towards correctly dealing with concurrent candidates so that all [[full node]] implementations can keep up with the network as it scales up. A subset of the block merkle structure is defined as a [[tack]]
 - ```
   tack = [head neck feet]
