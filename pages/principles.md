@@ -1,0 +1,4 @@
+- The only hard rule of minicash is that it is defined to have a finalized specification.
+- The rest of these points are different interpretations of the implications of this one basic rule.
+-
+- People should c

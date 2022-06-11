@@ -5,6 +5,7 @@
 	- UTXO systems scale much better than most people realize
 	- The endgame relationship between a [[full node]], [[pool node]], and [[thin node]]
 -
+- Read the [[principles]] of minicash
 -
 -
 -
