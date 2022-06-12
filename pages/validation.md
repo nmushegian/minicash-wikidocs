@@ -1,3 +1,5 @@
 - At a high level,
 	- `dmon` receives mail from `plug`, and ensures messages are well-formed rolls
-	- `dmon`
+	- `dmon` gives messages to `djin`, which does 3 main things,
+		- well-formed checks for any data it works with (`well`)
+		- valid-in-context checks
