@@ -18,9 +18,9 @@
   
   <- [ask/ticks tickhash[]]
   -> [res/ticks ticks[]]
+  
+  -> [ann/ticks ticks[]]
   ```
--
-- [[basic sync algorithm]]
 -
 - These core message types use a simple canonical chunking and merkle proof strategy to guide protocol implementers towards correctly dealing with concurrent candidates so that all [[full node]] implementations can keep up with the network as it scales up. A subset of the block merkle structure is defined as a [[tack]]
 - ```
@@ -31,6 +31,8 @@
   ```
 -
 - Note that this canonical chunking method depends directly on the hard-coded constants that define the minicash spec -- the maximum possible ticks per tock is 2^17, which can be chunked into 2^7 groups of 2^10 ticks each.
+-
+- These core terms delivered using these core mail types
 -
 -
 - modules
