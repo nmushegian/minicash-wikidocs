@@ -2,5 +2,7 @@
 - The rest of these points are different interpretations of the implications of this one basic rule.
 -
 - People should cooperate on [[full node]]s, and compete on [[pool node]]s.
-- You shouldn't try to make money from speculating on the price of minicash. Instead, you should try to build or invest into systems that can provide a sustainable [[cashflow]].
+- You shouldn't try to make money from speculating on the price of minicash (that activity has expected loss due to POW cost of the chain). Instead, you should try to build or invest into systems that can provide a sustainable [[cashflow]].
+- You should only spend m
+-
 -
