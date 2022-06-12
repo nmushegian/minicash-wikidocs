@@ -8,7 +8,7 @@
 - [[properties]] of the system (ie, various constants)
 - [[validation]] rules
 - [[coresync]] for full node equivalence
-- [[tinynode]] first implementation
+- [[minicash.ts]] first implementation
 -
 -
 -
