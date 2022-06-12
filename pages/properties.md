@@ -1,4 +1,4 @@
-- The following hard-coded constants and functions define minicash at a high level. With these, different developers could come up with close to identical systems. The purpose of the specification is to flesh out all the details down to the exact byte layout.
+- The following hard-coded constants and functions define minicash at a high level. With these, different developers could come up with close to identical systems. The purpose of the specification is to define minicash down to the exact byte layout.
 	- There are at most `7` inputs and at most `7` outputs per [[tick]].
 	- There are at most `2^17 == 131072` ticks per [[tock]].
 	- The time between tocks is exactly `57` seconds.
