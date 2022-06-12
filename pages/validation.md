@@ -2,4 +2,4 @@
 	- `dmon` receives mail from `plug`, and ensures messages are well-formed rolls
 	- `dmon` gives messages to `djin`, which does 3 main things,
 		- well-formed checks (`well`)for any data it works with
-		- valid-in-context checks (`vinx`) to check all val
+		- valid-in-context checks (`vinx`) to check all validation conditions except for unique-
