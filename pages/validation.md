@@ -10,5 +10,6 @@
 		- `djin` keeps track of best known valid state
 	- `dmon` requests best known headers from peers and calls them possibly-valid
 		- as it validates full tocks, it grows a tree of definitely-valid chains
-		-
+	- `dmon` responds to requests using the best definitely-valid state
+	-
 		-
