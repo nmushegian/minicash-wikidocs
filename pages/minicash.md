@@ -7,5 +7,7 @@
 -
 - Read the [[principles]] of minicash
 -
-- Minicash takes inspiration from unix philosophy. Typically this is understood to mean that each tool should do one thing, and do it well, an
+- Minicash takes inspiration from unix philosophy. Typically this is understood to mean that each tool should do one thing, and do it well. Minicash embraces this idea, and also embraces some 'secondary' ideas from that philosophy:
+	- Use of plain text
+	- Use of stdio
 -
