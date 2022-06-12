@@ -4,5 +4,5 @@
 		- well-formed checks (`well`) for any data it works with
 		- valid-in-context checks (`vinx`) to check all validation conditions except for double spend critical path
 		- critical path and state transition (`vult`) to check the unique-live-spend condition, meaning a UTXO must exist, not be spent, and not be expired ([[burn]] time)
-		- hash-addressed data is added to `rock`, system state is added to an immutable view
+		- hash-addressed data is added to `rock`, system state is added to `tree` which provides a pure map (per-snapshot view of state).
 		-
