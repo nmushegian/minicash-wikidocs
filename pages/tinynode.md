@@ -3,6 +3,10 @@
 - modules
 	- [[djin]] engine
 	- [[dmon]] daemon
+	- [[rock]] hashDB
+	- [[tree]] branching state DB
+	- [[vinx]] valid-in-context checks
+	- [[vult]] state transition
 	- [[well]] well-formed checks
 	- [[word]] basic definitions / ontology
 	-
