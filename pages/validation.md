@@ -3,6 +3,8 @@
 	- `dmon` gives messages to `djin`, which does 3 main things,
 		- well-formed checks (`well`) for any data it works with
 		- valid-in-context checks (`vinx`) to check all validation conditions except for double spend critical path
+			- signature check
 		- critical path and state transition (`vult`) to check the unique-live-spend condition, meaning a UTXO must exist, not be spent, and not be expired ([[burn]] time)
-		- hash-addressed data is added to `rock`, system state is added to `tree` which provides a pure map (per-snapshot view of state).
+			- hash-addressed data is added to `rock`
+			- system state is added to `tree` which is a pure map giving a per-snapshot view of the system state.
 		-
