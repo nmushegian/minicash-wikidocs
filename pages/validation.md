@@ -13,4 +13,4 @@
 		- as it validates full tocks, it grows a tree of definitely-valid chains
 	- `dmon` responds to requests using the best definitely-valid state
 -
-- The key point is that all steps prior to `vult` can be done without writing to the database at all, and `vult` manipu
+- The key point is that all steps prior to `vult` can be done without writing to the database at all, and `vult` manipulates a pure db abstraction which needs only real-time write locks which update one contested (and in theory could be implemented with a lock-free algorithm).
