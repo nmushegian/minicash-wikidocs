@@ -1,4 +1,6 @@
-- Welcome to the minicash wiki
+- Welcome to the minicash wiki.
+- Minicash is a cryptocurrency with a tiny and final spec.
+	-
 -
 - [[philosophy]] and design context
 - [[principles]] of minicash
