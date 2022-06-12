@@ -32,7 +32,9 @@
 -
 - Note that this canonical chunking method depends directly on the hard-coded constants that define the minicash spec -- the maximum possible ticks per tock is 2^17, which can be chunked into 2^7 groups of 2^10 ticks each.
 -
-- These core terms delivered using these core mail types
+- These core terms delivered using these core mail types are used to implement the [[coresync]] algorithm.
+-
+-
 -
 -
 - modules

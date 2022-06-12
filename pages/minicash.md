@@ -7,7 +7,7 @@
 - [[principles]] of minicash
 - [[properties]] of the system (ie, various constants)
 - [[validation]] rules
-- [[basic sync algorithm]] for full node equivalence
+- [[coresync]] for full node equivalence
 -
 -
 -
