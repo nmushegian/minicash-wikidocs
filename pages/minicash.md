@@ -4,7 +4,7 @@
 	- A *final* spec means that you can reason through the incentives and architecture and make long-term plans, knowing that the definition of the system will not be changed by someone else.
 -
 - Minicash is just a massively simplified version of Bitcoin.
-- One goal is to s
+- One goal is to demonstrate how Bitcoin was designed to scale to high throughput with just medium-sized blocks. We say "medium-sized" to emphasize that small vs big block debate both end in unworkable extremes, but a reasonable choice of constants
 -
 - [[philosophy]] and design context
 - [[principles]] of minicash
