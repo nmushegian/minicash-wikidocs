@@ -1,1 +1,3 @@
-- Here is a high-le
+- At a high level,
+	- `dmon` receives mail from `plug`, and ensures messages are well-formed rolls
+	- `dmon`
