@@ -10,5 +10,6 @@
 - The following properties are all implied by the ones above:
 	- The size of a serialized header is 68 bytes.
 	- The maximum serialized transaction size is 645 bytes.
+	- The maximum size of a directly serialized block is
 	- These constants imply that once the software matures, minicash should be able to handle a peak of `2300` tps (or `917,504` inputs and outputs each per second) with absolute worst case of 1.5mbps sustained bandwidth needed to stay synchronized as a full node (and likely only some fraction of this most of the time).
 -
