@@ -4,15 +4,18 @@
 - ```
   // `bill` is the output being spent
   // `tick` is the transaction spending it
-  checksig(bill :Bill, tick :Tick, i :number) :boolean {
+  checksig(bill :Bill, tick :Tick) :boolean {
+      // well-formed check ensures bill is unique in tick,
+      //   so we know which input to mask
       // ...
   }
   
-  // these arguments come from `vinx_tick`
+  // checksig arguments come from `vinx_tick`
+  
   // `conx` is the context, with ticks containing bills being spent
   // `tick` is the transaction being validated
   // returns *net fees* (can be negative) if valid-in-context
   vinx_tick(conx: Tick[], tick :Tick) :Okay<Fees> {
-  
+      // ...
   }
   ```
