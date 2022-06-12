@@ -7,5 +7,8 @@
 		- critical path and state transition (`vult`) to check the net tock [[fees]] as well as unique-live-spend condition, meaning a UTXO must exist, not be spent, and not be expired ([[burn]] time)
 			- hash-addressed data is added to `rock`
 			- system state is added to `tree` which is a pure map giving a per-snapshot view of the system state
-		- `djin` keeps track of best
-			-
+		- `djin` keeps track of best known valid state
+	- `dmon` requests best known headers from peers and calls them possibly-valid
+		- as it validates full tocks, it grows a tree of definitely-valid chains
+		-
+		-
