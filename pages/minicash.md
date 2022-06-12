@@ -5,6 +5,7 @@
 -
 - Minicash is just a massively simplified version of Bitcoin.
 - One goal is to demonstrate how Bitcoin was designed to scale to high throughput with just medium-sized blocks. We say "medium-sized" to emphasize that small vs big block debate both end in unworkable extremes, but a reasonable choice of constants and finalized protocol sidesteps this debate and allows us to strike a balance between full node requirements and network throughput.
+- The reason bitcoin has not scaled even with projects going for the "middle ground" approach (ie, Bitcoin Cash) is that the client is just badly engineered. It is layers of
 -
 - [[philosophy]] and design context
 - [[principles]] of minicash
