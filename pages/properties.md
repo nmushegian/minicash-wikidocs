@@ -1,4 +1,4 @@
 -
 - Once the software matures, minicash should be able to handle a peak of about 2300 tps with absolute worst case of 1mbps sustained bandwidth needed to stay synchronized as a full node (and likely only some fraction of this most of the time).
-- The total supply is 2^53. Note that this is one larger than the safe f64 range. This is intentional -- it is to remind the implementor that at tock-level validation, you *must* use bignums, because a tock can have total outputs greater than the total supply.
-	- There is a max-per-output and max-fee rule that says no output or fee may be larger than 2^50 - 1. This guarantees that wallets can safely use f64 for working with transactions, since each
+- The total supply is 2^53. Note that this is one larger than the safe f64 range (max 2^53 - 1). This is intentional -- it is to remind the implementor that at tock-level validation, you *must* use bignums, because a tock can have total outputs greater than the total supply.
+	- There is a max-per-output and max-fee rule that says no output or fee may be larger than 2^50 - 1. This guarantees that wallets can safely use f64 for working with transactions, since each tick has at most 7 outputs (and the fee).
