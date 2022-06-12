@@ -3,7 +3,8 @@
 	- A *tiny* spec means that it is realistic to see many different cross-tested client implementations, ensuring that it is defined by spec and not reference implementation.
 	- A *final* spec means that you can reason through the incentives and architecture and make long-term plans, knowing that the definition of the system will not be changed by someone else.
 -
-- Minicash is just a massively simplified version of Bitcoin. There are no
+- Minicash is just a massively simplified version of Bitcoin.
+- One goal is to s
 -
 - [[philosophy]] and design context
 - [[principles]] of minicash
