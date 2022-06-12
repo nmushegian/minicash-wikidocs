@@ -3,6 +3,8 @@
 -
 - People should cooperate on [[full node]]s, and compete on [[pool node]]s.
 - You shouldn't try to make money from speculating on the price of minicash (that activity has expected loss due to POW cost of the chain). Instead, you should try to build or invest into systems that can provide a sustainable [[cashflow]].
-- You should only spend m
+- You should only spend minicash when it is the most efficient way for you to get something you need. Otherwise, use that other way!
+- You should only hold minicash if you plan to spend it in the near future. If you anticipate needing to spend something else, you should save up that asset instead.
+-
 -
 -
