@@ -1,6 +1,7 @@
 - Welcome to the minicash wiki.
 - Minicash is a cryptocurrency with a tiny and final spec.
-	-
+	- A *tiny* spec means that it is realistic to see many different compatible client implementations with 'open competition' for new clients to join
+	- A *final* spec means that you can reason through the incentives and architecture and make long-term plans
 -
 - [[philosophy]] and design context
 - [[principles]] of minicash
