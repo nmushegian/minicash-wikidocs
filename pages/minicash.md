@@ -8,6 +8,8 @@
 - [[properties]] of the system (ie, various constants)
 - [[validation]] rules
 - [[coresync]] for full node equivalence
+- [[tinynode]] first implementation
+-
 -
 -
 -
