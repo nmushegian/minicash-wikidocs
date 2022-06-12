@@ -13,8 +13,8 @@
   <- [ask/tocks from]
   -> [res/tocks tocks[]]
   
-  <- [ask/tacks tockhash]
-  -> [res/tacks tockhash merkhash[] tickhash[][]]
+  <- [ask/tacks tockhash indx]
+  -> [res/tacks tockhash indx merkhash[] tickhash[][]]
   
   <- [ask/ticks tickhash[]]
   -> [res/ticks ticks[]]
