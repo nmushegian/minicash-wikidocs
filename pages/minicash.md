@@ -10,6 +10,7 @@
 	-
 -
 - Read the [[principles]] of minicash
+- The
 -
 - Minicash takes inspiration from unix philosophy. Typically this is understood to mean
 	- Do one thing, and do it well
