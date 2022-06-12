@@ -8,6 +8,7 @@
 	- The total supply is `2^53`. Note that this is one larger than the safe f64 range (max 2^53 - 1). This is intentional -- it is to remind the implementor that at tock-level validation, you *must* use bignums, because a tock can have total outputs greater than the total supply.
 		- There is a max-per-output and max-fee rule that says no output or fee may be larger than `2^50 - 1`. This guarantees that wallets can safely use f64 for working with transactions, since each tick has at most 7 outputs (and the fee).
 - The following properties are all implied by the ones above:
+	- The size of a serialized header is 68 bytes.
 	- The maximum serialized transaction size is 645 bytes.
 	- These constants imply that once the software matures, minicash should be able to handle a peak of `2300` tps (or `917,504` inputs and outputs each per second) with absolute worst case of 1.5mbps sustained bandwidth needed to stay synchronized as a full node (and likely only some fraction of this most of the time).
 -
