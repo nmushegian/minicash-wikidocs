@@ -6,3 +6,10 @@
 	- There is a long tail of "web 2.5" business activity, putting logic that cannot be entirely on-chain into sigchains run by [[threshlets]]
 	-
 	-
+- Minicash takes inspiration from unix philosophy. Typically this is understood to mean
+	- Each tool should do one thing, and do it well
+- Minicash embraces this idea, and also embraces some other ideas from unix land
+	- Use of plain text
+	- Use of stdio
+	- Stable command line API
+	-
