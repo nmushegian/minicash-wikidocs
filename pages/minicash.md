@@ -9,12 +9,14 @@
 	-
 	-
 -
-- Read the [[principles]] of minicash
-- The
+- [[principles]] of minicash
+- [[validation]] rules
+- [[basic sync algorithm]] for full node equivalence
+-
 -
 - Minicash takes inspiration from unix philosophy. Typically this is understood to mean
 	- Do one thing, and do it well
-- Minicash embraces this idea, and also embraces some 'secondary' ideas from that philosophy
+- Minicash embraces this idea, and also embraces some other ideas from unix land
 	- Use of plain text
 	- Use of stdio
 	- Stable command line API
