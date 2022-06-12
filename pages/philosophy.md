@@ -1,0 +1,8 @@
+- Minicash is a proof of concept of many different ideas
+	- The most important concept is the power of a finalized [[specification]]
+	- UTXO systems scale much better than most people realize
+	- Embeddable thin clients enable a new kind of cross-chain interop
+	- The endgame relationship between a [[full node]], [[pool node]], and [[thin node]] is probably different from what most people expect
+	- There is a long tail of "web 2.5" business activity, putting logic that cannot be entirely on-chain into sigchains run by [[threshlets]]
+	-
+	-

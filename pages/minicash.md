@@ -1,21 +1,13 @@
 - Welcome to the minicash wiki
 -
-- Minicash is a proof of concept of many different ideas
-	- The most important concept is the power of a finalized [[specification]]
-	- UTXO systems scale much better than most people realize
-	- Embeddable thin clients enable a new kind of cross-chain interop
-	- The endgame relationship between a [[full node]], [[pool node]], and [[thin node]] is probably different from what most people expect
-	- There is a long tail of "web 2.5" business activity, putting logic that cannot be entirely on-chain into sigchains run by [[threshlets]]
-	-
-	-
--
+- [[philosophy]] and design context
 - [[principles]] of minicash
 - [[validation]] rules
 - [[basic sync algorithm]] for full node equivalence
 -
 -
 - Minicash takes inspiration from unix philosophy. Typically this is understood to mean
-	- Do one thing, and do it well
+	- Each tool should do one thing, and do it well
 - Minicash embraces this idea, and also embraces some other ideas from unix land
 	- Use of plain text
 	- Use of stdio
