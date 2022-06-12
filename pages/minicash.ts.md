@@ -6,6 +6,7 @@
 -
 -
 - modules
+	- [[cash]] command-line tool and js library
 	- [[djin]] engine
 	- [[dmon]] daemon
 	- [[rock]] hashDB
