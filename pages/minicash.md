@@ -4,11 +4,12 @@
 	- The most important concept is the power of a finalized [[specification]]
 	- UTXO systems scale much better than most people realize
 	- The endgame relationship between a [[full node]], [[pool node]], and [[thin node]]
+	- There is a long tail of "web 2.5" business activity, putting logic that cannot be entirely on-chain into sigchains
 -
 - Read the [[principles]] of minicash
 -
 - Minicash takes inspiration from unix philosophy. Typically this is understood to mean
-	- **do one thing, and do it well**
+	- Do one thing, and do it well
 - Minicash embraces this idea, and also embraces some 'secondary' ideas from that philosophy
 	- Use of plain text
 	- Use of stdio
