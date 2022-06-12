@@ -9,11 +9,15 @@
 	- [[djin]] engine
 	- [[dmon]] daemon
 	- [[rock]] hashDB
+	- [[pool]] mining
+	- [[plug]] network
 	- [[tree]] branching state DB
 	- [[vinx]] valid-in-context checks
 	- [[vult]] state transition
 	- [[well]] well-formed checks
 	- [[word]] basic definitions / ontology
+	-
+	-
 	-
 	-
 	-
