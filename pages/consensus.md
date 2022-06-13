@@ -6,12 +6,12 @@
 	- there might be issues with congestion, but it does not change which chain wins
 	- no matter how many forks there are starting from what height, there is always one best chain from genesis to present
 	- honest miners will not mine on an 'illegitimate' chain. miners mine on definitely-valid, not possibly-valid (they only mine on a tock they have actually validated the state transition, ie `vult_full`).
-	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates. in any case, the miners just mine on the heaviest one. You just need to implement your system so that it can smoothly handle arbitrarily many forks. One way is to use pure data structures rather than using 'undo' primitive.
+	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates. in any case, the miners just mine on the heaviest one. You  need to implement your system so that it can smoothly handle many forks concurrently. One way is to use pure data structures rather than using an 'undo' primitive.
 	- the winning chain is not determined by height but by cumulative work. a shorter bitcoin chain could beat a longer bitcoin chain, because they don't have fixed intervals.
-	- POW is not a race to "first", it is "which has the most work". The "winner is first" model comes from a difficulty-based throttle.
+	- POW is not a race to "first", it is "which has the most work". The "winner is first" model comes from a difficulty-based throttle, and it is not accurate. If there is a fork, the chain with more work wins, not the one you saw first.
 	- POW would still work even if it was just a stream of [prev, root] with no timestamp, difficulty, or any other parameter, as long as there is an incentive to produce blocks (ie, if there are people paying to transact)
 		- time warping is irrelevant, if you spend your time working on "future" blocks, then your present block will have less expected work
-	- Some pool strategies might appear similar to selfish mining, but selfish mining is irrelevant because it has no impact on the definition of the correct system state. Pools are already a quasi-cartel that defers to the most efficient pool unless there is a "mutiny". An incentive for a "mutiny" appears when a cartel "leader" attempts double-spends or censorship, simply because it is less profitable from the POV of the protocol. Double-spends are targeted and localized. Censorship is a sustained expense. The schelling point for a mutiny is either 1) a double spend or 2)
+	- Some pool strategies might appear similar to selfish mining, but selfish mining is irrelevant because it has no impact on the definition of the correct system state.
 	-
 	-
 	-
