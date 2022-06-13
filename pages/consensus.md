@@ -1,3 +1,5 @@
 - One of the primary principles of the minicash community is that we do not waste time on concern trolls regarding the consensus protocol (the fixed-period, no-difficulty POW variant).
 - Instead, we maintain this list of explanations that help people understand why it should work.
-- Most importantly,
+- Most importantly, whether or not it works cannot impact the minicash specification, which is finalized. If this consensus protocol doesn't work, that means minicash is defined as a broken system, not that minicash will be "fixed".
+-
+-
