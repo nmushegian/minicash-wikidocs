@@ -1,0 +1,3 @@
+- One of the primary principles of the minicash community is that we do not waste time on concern trolls regarding the consensus protocol (the fixed-period, no-difficulty POW variant).
+- Instead, we maintain this list of explanations that help people understand why it should work.
+- Most importantly,
