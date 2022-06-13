@@ -5,5 +5,6 @@
 - hmm
 	- there might be issues with congestion, but it does not change which chain wins
 	- honest miners will not mine on an 'illegitimate' chain. miners mine on definitely-valid, not possibly-valid.
-	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates
+	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates. in any case, the miners just mine on the heaviest one
+	- POW would still work even if it was just a stream of [prev, root] with no timestamp, difficulty, or any other parameter, as long as the incentive to mine on the "correct" chain
 	-
