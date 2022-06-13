@@ -4,8 +4,10 @@
 -
 - hmm
 	- there might be issues with congestion, but it does not change which chain wins
-	- honest miners will not mine on an 'illegitimate' chain. miners mine on definitely-valid, not possibly-valid.
-	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates. in any case, the miners just mine on the heaviest one
+	- no matter how many forks there are starting from what height, there is always one best chain from genesis to present
+	- honest miners will not mine on an 'illegitimate' chain. miners mine on definitely-valid, not possibly-valid
+	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates. in any case, the miners just mine on the heaviest one. You just need to implement your system so that it can smoothly handle arbitrarily many forks. One way is to use pure data structures rather than using 'undo' primitive.
 	- POW would still work even if it was just a stream of [prev, root] with no timestamp, difficulty, or any other parameter, as long as there is an incentive to produce blocks (ie, if there are people paying to transact)
-	- t
+	- time warping / if you spend your time working on future blocks, then your present block will have less expected work
+	-
 	-
