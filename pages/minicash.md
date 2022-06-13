@@ -13,6 +13,7 @@
 - [[validation]] rules
 - [[coresync]] for full node equivalence
 - [[minicash.ts]] first implementation
+- [[consensus]] notes on the consensus protocol
 -
 -
 -
