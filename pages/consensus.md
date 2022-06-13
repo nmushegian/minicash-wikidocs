@@ -2,4 +2,8 @@
 - Instead, we maintain this list of explanations that help people understand why it should work.
 - Most importantly, whether or not it works cannot impact the minicash specification, which is finalized. If this consensus protocol doesn't work, that means minicash is defined as a broken system, not that minicash will be "fixed".
 -
--
+- hmm
+	- there might be issues with congestion, but it does not change which chain wins
+	- honest miners will not mine on an 'illegitimate' chain. miners mine on definitely-valid, not possibly-valid.
+	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates
+	-
