@@ -7,10 +7,12 @@
 	- no matter how many forks there are starting from what height, there is always one best chain from genesis to present
 	- honest miners will not mine on an 'illegitimate' chain. miners mine on definitely-valid, not possibly-valid (they only mine on a tock they have actually validated the state transition, ie `vult_full`).
 	- in bitcoin, there is nothing special about whether there are 2, 3, or even 4 active head candidates. in any case, the miners just mine on the heaviest one. You just need to implement your system so that it can smoothly handle arbitrarily many forks. One way is to use pure data structures rather than using 'undo' primitive.
-		- the winning chain is not determined by height but by cumulative work. a shorter bitcoin chain could beat a longer bitcoin chain, because they don't have fixed intervals (something weird would have to happen with difficulty adjustments, but it is possible)
+	- the winning chain is not determined by height but by cumulative work. a shorter bitcoin chain could beat a longer bitcoin chain, because they don't have fixed intervals.
 	- POW is not a race to "first", it is "which has the most work". The "winner is first" model comes from a difficulty-based throttle.
 	- POW would still work even if it was just a stream of [prev, root] with no timestamp, difficulty, or any other parameter, as long as there is an incentive to produce blocks (ie, if there are people paying to transact)
-	- time warping / if you spend your time working on future blocks, then your present block will have less expected work
+		- time warping is irrelevant, if you spend your time working on "future" blocks, then your present block will have less expected work
+	- Selfish mining is irrelevant
+	-
 	-
 	-
 	-
