@@ -1,0 +1,18 @@
+- Tree growth analogy
+	- Ecosystem growth of high performance network like Solana vs something like Minicash
+		- Solana is like a tall tree
+		- Minicash is like a wide bush
+	- Solana can reach great heights, you can implement most kinds of things
+	- Minicash has a limited height, you need to invent higher layers to do most things
+	- Both start out with growth like n^3
+		- A tall tree fills its footprint and then grows up, it is more linear
+		- A wide bush grows outward with limited height, it is more quadratic
+	- A tall tree has a core that is hard and homogenous, there is one trunk
+	- A sprawling bush is a heterogeneous mass, it might have many distinct root systems
+	- Which is more likely to be destroyed or simply collapse under its own weight?
+	-
+	-
+	-
+	-
+	-
+	-
