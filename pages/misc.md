@@ -11,6 +11,7 @@
 	- A sprawling bush is a heterogeneous mass, it might have many distinct root systems
 	- Which is more likely to be destroyed or simply collapse under its own weight?
 	-
+- [[thin node]]
 	-
 	-
 	-

@@ -58,6 +58,9 @@
  {:block/name "jun 13th, 2022",
   :block/created-at 1655119831899,
   :block/updated-at 1655119831899}
+ {:block/name "jun 15th, 2022",
+  :block/created-at 1655301782396,
+  :block/updated-at 1655301782396}
  {:block/name "later",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
@@ -69,10 +72,13 @@
   :block/updated-at 1655119715495}
  {:block/name "minicash",
   :block/created-at 1654979533945,
-  :block/updated-at 1655127091962}
+  :block/updated-at 1655301805261}
  {:block/name "minicash.ts",
   :block/created-at 1655033611862,
   :block/updated-at 1655033942404}
+ {:block/name "misc",
+  :block/created-at 1655301802082,
+  :block/updated-at 1655302246322}
  {:block/name "now",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
