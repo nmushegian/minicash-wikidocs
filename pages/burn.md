@@ -1,0 +1,2 @@
+- Ments have a 17 year expiration. A ment can be spent by anyone (read: the pool that mines the tock) once the tock is was confirmed in is older than this expiry.
+- The exact duration is `60 * 60 * 24 * 365.25 * 17`, ie, we count seconds per year with leap days.
