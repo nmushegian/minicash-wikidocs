@@ -13,7 +13,7 @@
 		- as it validates full tocks, it grows a tree of definitely-valid chains
 	- `dmon` responds to requests using the best definitely-valid state
 -
-- The key point is that all steps prior to `vult` can be done without writing to the database at all, and `vult` manipulates a pure db abstraction which needs only real-time write locks which update one contested internal map value (and in theory could even be implemented with a lock-free algorithm). The engine can thus process critical paths for multiple candidate chains at once, and in practice will likely be able to deal with real time branch switching between candidates one just one critical path thread for all branches.
+- The key point is that all steps prior to `vult` can be done without writing to the database at all, and `vult` manipulates a pure db abstraction over append-only data model which needs only real-time write locks which update one contested internal map value and in theory could even be implemented with a lock-free algorithm. The engine can thus process critical paths for multiple candidate chains at once, and in practice will likely be able to deal with real time branch switching between candidates on just one critical path thread for all branches.
 -
 -
 -
