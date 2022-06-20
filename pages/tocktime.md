@@ -1,0 +1,12 @@
+- The `time` field of a [[tock]] is defined to be 57 seconds larger than the previous tock.
+- It is important to understand what tocktime is and is not.
+- Tock time is *not* the exact time that a tock was created.
+- Pools can create tocks with a particular timestamp any time they want.
+- The best pool strategy is to treat the tock time as an *interval*, during which pools can switch from mining the previous tock to accepting and mining one of the new tocks.
+- Pools might choose to delay publishing their tock for as long as possible within the interval, to make it have higher work.
+- In this situation, they are forgoing the chance to work on an earlier tock, if it has higher work.
+- In any case, the optimal strategy is to switch to the best valid tock *when you receive it*, and to send your best valid tock *so that nodes process it as soon as possible*.
+- The reality of networks might make it so that *some delay is beneficial* to spend extra time working on a tock during the time that nodes are processing eagerly send tocks.
+- Recall that short reorgs are not considered problematic at all. They are part of the consensus process. Pool nodes can adjust and tune their strategies based on their connectivity.
+-
+- Tock time is only an *approximate* measure of time *a posteriori*. If you tried to look at real-world chronology in terms of tock time, it would appear to be stretching and shrinking locally, but linear and 1:1 with real time globally.

@@ -12,6 +12,8 @@
 	- Which is more likely to be destroyed or simply collapse under its own weight?
 	-
 - [[thin node]]
+- [[tocktime]]
+- [[burn]]
 	-
 	-
 	-
