@@ -1,4 +1,13 @@
-- Minicash is defined by specification, and has multiple implementations of [[full node]] clients.
+- Minicash is defined by specification, and should have multiple competitive implementations of [[full node]] clients.
+-
+- It is important to emphasize which parts of the protocol definition or any particular codebase are the actual protocol, an implementation detail, or a wire format.
+	- The core protocol is defined in terms of ticks, tocks, "valid block" definition, and "best chain" definition. This is 2 data structures and 2 functions that define their relation and a way to determine a "best chain".
+	- All aspects of a particular client that deal with organizing and processing these core structures are implementation details.
+	- There is one particularly important implementation detail which is the [[wire format]]. We call this a "format" even though it implicitly includes live network protocols like IP or even higher levels of the network stack. The message types in the wire format are defined as rigorously as the rest of the system to give client implementations a way to synchronize that is known to lead to the correct state.
+		- Clients could choose more efficient ways to communicate. For example, some information in the memos is simply wasteful, for example, the memo tags could be just 1 byte or even implied from the structure. Other memos contain info that is redundant, it could simply be omitted and reconstructed.
+		- When clients add support for new wire formats (including, by our definition, new transport types), *they should still support the original core message types*. This is a way to ensure their clients still synchronize to the correct system state.
+-
+-
 -
 - The specification is oriented around the core terms, [[tick]] and [[tock]]
 - ```
