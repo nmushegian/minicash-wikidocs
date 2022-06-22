@@ -5,4 +5,7 @@
 - The first is called Rock.
 	- Rock is a direct key-value store.
 	- Rock is insert-only, no value can be changed once inserted. All state is implemented with constant-time access of some small number of values (e.g., "exists" and "spent" status for utxo).
-	- A database transaction over a rock is called a `rite`.
+	- A database transaction over a rock is called a `rite`. We say "database transaction" to emphasize that this is not minicash transaction, which is called a `tick`. Processing a tick happens at a different layer of abstraction.
+- The second is called Tree.
+	- Tree is a key-value store with an immutable map API. You could call this a "pure map" or an "immutable map", although in a precise definition you should try to avoid these terms and emphasize that it is an *API* that navigates an abstraction in the underlying rock.
+	- A database transaction over a tree is called a `twig`.
