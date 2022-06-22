@@ -5,7 +5,16 @@
 - The first is called Rock.
 	- Rock is a direct key-value store.
 	- Rock is insert-only, no value can be changed once inserted. All state is implemented with constant-time access of some small number of values (e.g., "exists" and "spent" status for utxo).
-	- A database transaction over a rock is called a `rite`. We say "database transaction" to emphasize that this is not minicash transaction, which is called a `tick`. Processing a tick happens at a different layer of abstraction.
+	- A database transaction over a rock is called a `rite`. We say "database transaction" to emphasize that this is a distinct concept from a minicash transaction, which is called a `tick`. Processing a tick happens at a different layer of abstraction.
 - The second is called Tree.
 	- Tree is a key-value store with an immutable map API. You could call this a "pure map" or an "immutable map", although in a precise definition you should try to avoid these terms and emphasize that it is an *API* that navigates an abstraction in the underlying rock.
-	- A database transaction over a tree is called a `twig`.
+	- A database transaction over a tree is called a `twig`. It is distinct from `rite`, the transaction on the underlying rock, and very different from `tick`, which is a minicash transaction (which exists at a higher level of abstraction).
+	- A `twig` is *implemented* using `rite`, because Tree is an abstraction on top of Rock.
+	- For efficiency, you can access the underlying `rite` from inside a `twig`, so that you don't need to open separate transactions if you want to insert things into the direct map and also into the pure map. Your language bindings should help you ensure that these remain logically isolated.
+	- A tree is implemented using a data structure we are for now just calling a "fast prefix tree", which might more precisely be called an "adaptive patricia trie". That means,
+		- It is a prefix tree
+			- It has variable "depth" nodes, like a patricia trie
+			- It has variable "width" nodes, like an adaptive radix tree
+		- The "patricia" or "depth" part is a time optimization, and is essential for performance.
+		- The "adaptive"width" part is a space optimization, and ha
+	-
