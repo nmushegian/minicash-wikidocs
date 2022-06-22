@@ -1,0 +1,20 @@
+- Minicash might be a good system for teaching a lot of computer science concepts.
+- A system is a good case study for learning a concept when the system is simple, and more attention can be focused on the concept than on the example.
+- Minicash might serve as a good example for a lot of different concepts, for example,
+	- Concurrency
+		- Identifying critical paths
+		- Span analysis
+		- Designing algorithms for parallelism (minimizing the critical path, maximizing the span)
+		- Practical knowledge of threads, using channels as introductory sync primitive
+	- Pure data structures
+		- A pure map/set is arguably the simplest non trivial immutable data structure. Something like a cons list is maybe too abstract to use as an example of an immutable data structure, even if it is simpler.
+		- The insert-only properties of the database make the implementation of the prefix tree much simpler, so it is a good first stepping stone for implementing a more fully-featured prefix tree.
+	- Grammars and parsers
+		- The minicash codebase and auxiliary tooling make use of a small DSL and JAMS, a minimalist almost-plain-text data format. Both of these are extremely simple grammars and can be used as initial examples of how to write parsers.
+	- Distributed systems
+		- POW is arguably the simplest consensus protocol, so students can spend less time debugging consensus and more time designing engines for p2p protocols.
+		- If they don't want to use POW, then using a threshlet made out of a chain of minicash transactions is another minimalist alternative
+	-
+	-
+-
+	-
