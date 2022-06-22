@@ -11,10 +11,11 @@
 	- A database transaction over a tree is called a `twig`. It is distinct from `rite`, the transaction on the underlying rock, and very different from `tick`, which is a minicash transaction (which exists at a higher level of abstraction).
 	- A `twig` is *implemented* using `rite`, because Tree is an abstraction on top of Rock.
 	- For efficiency, you can access the underlying `rite` from inside a `twig`, so that you don't need to open separate transactions if you want to insert things into the direct map and also into the pure map. Your language bindings should help you ensure that these remain logically isolated.
-	- A tree is implemented using a data structure we are for now just calling a "fast prefix tree", which might more precisely be called an "adaptive patricia trie". That means,
+	- A tree is implemented using a data structure called an *adaptive radix trie*.
 		- It is a prefix tree
 			- It has variable "depth" nodes, like a patricia trie
-			- It has variable "width" nodes, like an adaptive radix tree
-		- The "patricia" or "depth" part is a time optimization, and is essential for performance.
-		- The "adaptive" or "width" part is a space optimization, it has secondary impact on performance via the memory/storage hierarchy, you can achieve the same by adding more and faster memory/storage.
+			- It has variable "width" nodes, this is the new feature of the "adaptive" radix tree introduced by the authors of the [adaptive radix tree paper](https://db.in.tum.de/~leis/papers/ART.pdf)
+		- The"depth" part is a time optimization, and is essential for performance.
+		- The "width" part is a space optimization, it has secondary impact on performance via the memory/storage hierarchy, you can achieve the same by adding more and faster memory/storage
 	-
+-
