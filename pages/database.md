@@ -16,5 +16,5 @@
 			- It has variable "depth" nodes, like a patricia trie
 			- It has variable "width" nodes, like an adaptive radix tree
 		- The "patricia" or "depth" part is a time optimization, and is essential for performance.
-		- The "adaptive"width" part is a space optimization, and ha
+		- The "adaptive" or "width" part is a space optimization, it has secondary impact on performance via the memory/storage hierarchy, you can achieve the same by adding more and faster memory/storage.
 	-
