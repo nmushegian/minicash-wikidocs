@@ -13,7 +13,11 @@
 		- The minicash codebase and auxiliary tooling make use of a small DSL and JAMS, a minimalist almost-plain-text data format. Both of these are extremely simple grammars and can be used as initial examples of how to write parsers.
 	- Distributed systems
 		- POW is arguably the simplest consensus protocol, so students can spend less time debugging consensus and more time designing engines for p2p protocols.
-		- If they don't want to use POW, then using a threshlet made out of a chain of minicash transactions is another minimalist alternative
+		- If they don't want to use POW, then using a threshlet made out of a chain of minicash transactions is another minimalist alternative that lets students focus on the *fundamental* problems of protocol design rather than dealing with the headaches of making distributed systems primitives from scratch. Whether your protocol fails to achieve consensus because of network issues or because of fundamentally incorrect sync logic is an important distinction that confuses many developers.
+	-
+	-
+	-
+	-
 	-
 	-
 -
