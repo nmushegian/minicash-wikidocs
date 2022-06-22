@@ -1,0 +1,8 @@
+- The design of the database layer of minicash is perhaps the most important part of creating a performant minicash client.
+- Minicash acknowledges the reality of forking head-on and relaxes the POW rules to make them simpler to specify but leading to continuous forking instead of treating it like an exception.
+-
+- Minicash has two different abstractions for dealing with the tree of blocks and system state.
+- The first is called Rock.
+	- Rock is a direct key-value store.
+	- Rock is insert-only, no value can be changed once inserted. All state is implemented with constant-time access of some small number of values (e.g., "exists" and "spent" status for utxo).
+	- A database transaction over a rock is called a `rite`.
