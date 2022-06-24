@@ -76,9 +76,15 @@
  {:block/name "jun 22nd, 2022",
   :block/created-at 1655917063219,
   :block/updated-at 1655917063219}
+ {:block/name "jun 23rd, 2022",
+  :block/created-at 1655962756157,
+  :block/updated-at 1655962756157}
  {:block/name "later",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
+ {:block/name "learning",
+  :block/created-at 1655921540528,
+  :block/updated-at 1655922149965}
  {:block/name "mail types",
   :block/created-at 1654982262485,
   :block/updated-at 1654982262485}
@@ -93,7 +99,7 @@
   :block/updated-at 1655033942404}
  {:block/name "misc",
   :block/created-at 1655301802082,
-  :block/updated-at 1655742853531}
+  :block/updated-at 1655921540529}
  {:block/name "now",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
