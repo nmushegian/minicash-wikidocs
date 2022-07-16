@@ -1,3 +1,5 @@
+public:: true
+
 - At a high level,
 	- `dmon` receives mail from `plug`, and ensures messages are well-formed rolls
 	- `dmon` gives messages to `djin`, which does 3 main things,

@@ -1,3 +1,5 @@
+public:: true
+
 - Minicash is defined by specification, and should have multiple competitive implementations of [[full node]] clients.
 - The specification is oriented around the core terms, [[tick]] and [[tock]]
 - ```

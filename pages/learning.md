@@ -1,3 +1,5 @@
+public:: true
+
 - Minicash might be a good system for teaching a lot of computer science concepts.
 - A system is a good case study for learning a concept when the system is simple, and more attention can be focused on the concept than on the example.
 - Minicash might serve as a good example for a lot of different concepts, for example,

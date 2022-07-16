@@ -1,3 +1,5 @@
+public:: true
+
 - Minicash is a proof of concept of many different ideas
 	- The most important concept is the power of a finalized [[specification]]
 	- UTXO systems scale much better than most people realize

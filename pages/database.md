@@ -1,22 +1,23 @@
+public:: true
+
 - The design of the database layer of minicash is perhaps the most important part of creating a performant minicash client.
 - Minicash acknowledges the reality of forking head-on and relaxes the POW rules to make them simpler to specify but leading to continuous forking instead of treating it like an exception.
 -
 - Minicash has two different abstractions for dealing with the tree of blocks and system state.
 	- Here are the set of records that define the minicash system state.
 	- ```
-	  // Rock:                                                                                                                                                                                     
-	  //    ['tick', tickhash]         -> tick                                                                                                                                                     
-	  //    ['tack', tockhash, i]      -> tack                                                                                                                                                     
-	  //    ['tock', tockhash]         -> tock                                                                                                                                                     
-	  //    ['work', tockhash]         -> work  // cumulative work                                                                                                                                 
-	  //    ['fold', tockhash, i]      -> fold  // [snap, fees]  partial utxo / fees                                                                                                               
-	  //    ['know', tockhash]         -> know  // validity state                                                                                                                                  
-	  //    ['best']                   -> tock                                                                                                                                                     
+	  // Rock:
+	  //    ['tick', tickhash]         -> tick
+	  //    ['tack', tockhash, i]      -> tack
+	  //    ['tock', tockhash]         -> tock
+	  //    ['work', tockhash]         -> work  // cumulative work
+	  //    ['fold', tockhash, i]      -> fold  // [snap, fees]  partial utxo / fees
+	  //    ['know', tockhash]         -> know  // validity state
+	  //    ['best']                   -> tock
 	  
-	  // Tree:                                                                                                                                                                                     
-	  //    [(snap) 'ment', mark]      -> ment  // utxo put [code, cash]                                                                                                                           
-	  //    [(snap) 'pent', mark]      -> pent  // utxo use [tish, tosh] (by tick, in tock)                                                                                                        
-	  //    [(snap) 'pyre', mark]      -> time  // utxo expires  
+	  // Tree:
+	  //    [(snap) 'ment', mark]      -> ment  // utxo put [code, cash]
+	  //    [(snap) 'pent', mark]      -> pent  // utxo use [tish, tosh] (by tick, in tock)
 	  ```
 - Note that the special mint tick rules mean that `ment/pent` also keeps a *per-branch* set of tocks in history. This is so that you can quickly answer "is X and ancestor of Y" *for a particular branch*.
 -

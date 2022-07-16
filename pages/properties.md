@@ -1,3 +1,5 @@
+public:: true
+
 - The following hard-coded constants and functions define minicash at a high level. With these, different developers could come up with close to identical systems. The purpose of the specification is to define minicash down to the exact byte layout.
 	- There are at most `7` inputs and at most `7` outputs per [[tick]].
 	- There are at most `2^17 == 131072` ticks per [[tock]].
@@ -6,4 +8,3 @@
 	- `hash` is defined as `keccak256`.
 	- `scry` is defined as `secp256k1.ecrecover` (compressed pubkey)
 	- The total supply is `2^53`. Note that this is one larger than the safe f64 range (max 2^53 - 1). This is intentional -- it is to remind the implementor that at tock-level validation, you *must* use bignums, because a tock can have total outputs greater than the total supply.
-		- There is a max-per-output and max-fee rule that says no output or fee may be larger than `2^50 - 1`. This guarantees that wallets can safely use f64 for working with individual transactions, since each tick has at most 7 outputs (and the fee).

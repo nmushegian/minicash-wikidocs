@@ -1,3 +1,5 @@
+public:: true
+
 - Tree growth analogy
 	- Ecosystem growth of high performance network like Solana vs something like Minicash
 		- Solana is like a tall tree

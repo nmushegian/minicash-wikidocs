@@ -1,3 +1,5 @@
+public:: true
+
 - The `time` field of a [[tock]] is defined to be 57 seconds larger than the previous tock.
 - It is important to understand what tocktime is and is not.
 - Tock time is *not* the exact time that a tock was created.
