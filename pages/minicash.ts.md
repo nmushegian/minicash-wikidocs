@@ -1,3 +1,5 @@
+public:: true
+
 -
 - https://github.com/nmushegian/minicash
 	- Small implementation in typescript focused on correctness.

@@ -1,3 +1,5 @@
+public:: true
+
 - A thin node is a node that downloads all tocks but only some ticks.
 - A thin node is assumed to have a primary "user", this is some person or system.
 - A thin node accepts ticks that are confirmed in a header into the database even if it does not establish context for those ticks (no vinx check). This means it could accept a bad tock even if it has the most work.

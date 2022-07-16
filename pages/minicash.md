@@ -17,6 +17,7 @@ public:: true
 - [[coresync]] for full node equivalence
 - [[minicash.ts]] first implementation
 - [[consensus]] notes on the consensus protocol
+- [[learning]] about CS topics using minicash as a case study
 - [[misc]] uncategorized
 -
 -
