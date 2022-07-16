@@ -4,10 +4,13 @@ public:: true
 	- The most important concept is the power of a finalized [[specification]]
 	- UTXO systems scale much better than most people realize
 	- Embeddable thin clients enable a new kind of cross-chain interop
-	- The endgame relationship between a [[full node]], [[pool node]], and [[thin node]] is probably different from what most people expect
+	- The endgame relationship between a [[full node]], [[pool node]], and [[thin node]] is probably different than what most people understand based on their experience with Bitcoin
 	- There is a long tail of "web 2.5" business activity, taking logic that cannot be entirely on-chain and implementing it with sigchains run by [[threshlets]]
 	-
-	-
+- Minicash is just a massively simplified version of Bitcoin.
+- One goal is to demonstrate how Bitcoin was designed to scale to high throughput with just medium-sized blocks. We say "medium-sized" to emphasize that small vs big block debate both end in unworkable extremes, but a reasonable choice of constants and finalized protocol sidesteps this debate. Medium sized blocks allow us to strike a balance between full node requirements and network throughput.
+	- The reason bitcoin has not scaled even with projects going for the "middle ground" approach (ie, Bitcoin Cash) is that the client is just badly engineered. The client may have started one way or another, but over a decade of patchwork development has made it intractable to make a version that is both compatible and scales properly.
+	- It would require a long period of iterative refactoring which is made dramatically more complex by the need for backwards compatibility on a live network. If we start from a clean slate and reduce the spec as much as possible, we can focus on designing interfaces and data structures that naturally expose how to perform the concurrent validation and fast branch switching necessary to manage high throughput systems with POW-style probabilistic finality.
 	-
 - Minicash takes inspiration from unix philosophy. Typically this is understood to mean
 	- Each tool should do one thing, and do it well
