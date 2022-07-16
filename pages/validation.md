@@ -4,8 +4,7 @@
 		- well-formed checks (`well`) for any data it works with
 		- valid-in-context checks (`vinx`) to check all validation conditions except for double spend critical path and tock fees
 			- [[checksig]]
-			- net [[fees]]
-		- critical path and state transition (`vult`) to check the net tock [[fees]] as well as unique-live-spend condition, meaning a UTXO must exist, not be spent, and not be expired ([[burn]] time)
+		- critical path and state transition (`vult`) to check the net tock [[fees]] as well as unique-live-spend condition, meaning a UTXO must exist and not be spent
 			- hash-addressed data is added to `rock`
 			- system state is added to `tree` which is a pure map giving a per-snapshot view of the system state
 		- `djin` keeps track of best known valid state
