@@ -9,11 +9,12 @@ public:: true
 -
 - modules
 	- [[cash]] command-line tool and js library
+	- [[chan]] concurrency
 	- [[djin]] engine
 	- [[dmon]] daemon
-	- [[rock]] hashDB
 	- [[pool]] mining
 	- [[plug]] network
+	- [[rock]] hashDB
 	- [[tree]] branching state DB
 	- [[vinx]] valid-in-context checks
 	- [[vult]] state transition
