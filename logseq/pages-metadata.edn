@@ -4,9 +4,6 @@
  {:block/name "b",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
- {:block/name "burn",
-  :block/created-at 1655034424518,
-  :block/updated-at 1655470742657}
  {:block/name "c",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
@@ -33,7 +30,7 @@
   :block/updated-at 1655033526869}
  {:block/name "database",
   :block/created-at 1655917083853,
-  :block/updated-at 1657461860112}
+  :block/updated-at 1657937150268}
  {:block/name "djin",
   :block/created-at 1654981089236,
   :block/updated-at 1654981089236}
@@ -67,6 +64,12 @@
  {:block/name "jul 13th, 2022",
   :block/created-at 1657748734975,
   :block/updated-at 1657748734975}
+ {:block/name "jul 15th, 2022",
+  :block/created-at 1657936034349,
+  :block/updated-at 1657936034349}
+ {:block/name "jul 16th, 2022",
+  :block/created-at 1657945840999,
+  :block/updated-at 1657945840999}
  {:block/name "jul 7th, 2022",
   :block/created-at 1657196483103,
   :block/updated-at 1657196483103}
@@ -103,24 +106,21 @@
  {:block/name "mail types",
   :block/created-at 1654982262485,
   :block/updated-at 1654982262485}
- {:block/name "midlang",
-  :block/created-at 1655119715495,
-  :block/updated-at 1655119715495}
  {:block/name "minicash",
   :block/created-at 1654979533945,
-  :block/updated-at 1655743708896}
+  :block/updated-at 1657938110388}
  {:block/name "minicash.ts",
   :block/created-at 1655033611862,
   :block/updated-at 1655033942404}
  {:block/name "misc",
   :block/created-at 1655301802082,
-  :block/updated-at 1655921540529}
+  :block/updated-at 1657936106522}
  {:block/name "now",
   :block/created-at 1655039954696,
   :block/updated-at 1655039954696}
  {:block/name "philosophy",
   :block/created-at 1655032228086,
-  :block/updated-at 1655743847871}
+  :block/updated-at 1657938163512}
  {:block/name "plug",
   :block/created-at 1655033909296,
   :block/updated-at 1655033909296}
@@ -136,9 +136,6 @@
  {:block/name "properties",
   :block/created-at 1655032640438,
   :block/updated-at 1655041400928}
- {:block/name "regex",
-  :block/created-at 1655083993993,
-  :block/updated-at 1655083993993}
  {:block/name "renvm",
   :block/created-at 1654980320775,
   :block/updated-at 1654980320775}
@@ -147,7 +144,7 @@
   :block/updated-at 1655033638475}
  {:block/name "specification",
   :block/created-at 1654979645423,
-  :block/updated-at 1655834460902}
+  :block/updated-at 1657936539367}
  {:block/name "tack",
   :block/created-at 1654982283619,
   :block/updated-at 1654982300110}
@@ -177,13 +174,10 @@
   :block/updated-at 1655033640210}
  {:block/name "validation",
   :block/created-at 1655032130644,
-  :block/updated-at 1655743912453}
+  :block/updated-at 1657936064315}
  {:block/name "vinx",
   :block/created-at 1655033658240,
   :block/updated-at 1655033658240}
- {:block/name "vlang",
-  :block/created-at 1655081351039,
-  :block/updated-at 1655081351039}
  {:block/name "vult",
   :block/created-at 1655033663207,
   :block/updated-at 1655033663207}
