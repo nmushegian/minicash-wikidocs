@@ -1,0 +1,8 @@
+- The total supply of minicash is `2^53`.
+	- This is one larger than the maximum safe float64. This is to emphasize that while it is safe to use float64 for computing net inputs/outputs of a single tick, you must use at least u64 for computing total in / total out / net fee for a whole tock, or range of tocks (ie, the javascript `number` type is not safe).
+-
+- The subsidy each tock is `1 / 2^21` of the remaining subsidy. In exact terms:
+	- `subsidy[n] = floor(remaining[n-1] / 2^21)`
+	- `remaining[n] = remaining[n-1] - subsidy[n]`
+-
+- 1 unit of minicash is defined to simply be 1, it is not divisible. Instead,
