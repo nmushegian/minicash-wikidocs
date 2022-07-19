@@ -7,4 +7,15 @@
   ```
 - A `move` is a list with 3 items: `[txin, idx, sig]`
 	- A `txin` is a tickhash. A tickhash is a 24-byte hash of a serialized tick (the first 24 bytes of its `keccak256` hash).
-	- A `idx` is a single byte containing a value from 0-7. Note that a move can
+	- A `idx` is a single byte containing a value from 0-7. Note that a tick can only have 7 outputs, which correspond to `idx` value 0-6. When idx is 7, this is the special "mint tick", described below.
+	- A `sig` is a `secp256k1` signature, which is 65 bytes. See [[vinx]] (`vinx_tick`) for details about the signature check.
+	-
+-
+-
+- A mint tick is the tick that contains the miner reward. It has a special form, and puts all the special case logic in one place.
+	- A mint tick must have only 1 move and 1 ment.
+	- A mint tick must be the *last* tick in a tock.
+	- The move's `txin` refers to the previous tock hash, not to a tick. If a client implementation uses a purely functional data structure for the UTXO set, then this move functions as a fast *per-branch* ancestor check.
+	- The move's `idx` is 7. This emphasizes that it is not spending a regular tick, and also emphasizes the final nature of the protocol -- it would require very roundabout logic to allow more than 7 ticks per tock, because it would conflict with this special case.
+	- The move's `sig` does not need to be a valid signature, because it is not spending a real tick. However it does still need to be the same size as a regular signature (65 bytes).
+	-
