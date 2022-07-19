@@ -1,17 +1,15 @@
 - The total supply of minicash is `2^53`.
-	- One unit is defined as simply 1, it is not divisible. Instead, you can use standard SI units to talk about different quantities. In other words, there are roughly
+	- One unit is defined as simply 1, it is not divisible. Instead, you can use standard SI units to talk about larger quantities. In other words, there are roughly
 		- `9,007,199,254,740,992` minicash
 		- `9,007,199,254,741` kilocash
 		- `9,007,199,255` megacash
 		- `9,007,199` gigacash
-		- `9,007`,  teracash
-		-
+		- `9,007`  teracash
 		-
 	- 2^53 is one larger than the maximum safe float64. This is to emphasize that while it is safe to use float64 for computing net inputs/outputs of a single tick, you must use at least u64 for computing total in / total out / net fee for a whole tock, or range of tocks (ie, the javascript `number` type is not safe).
 -
-- The subsidy each tock is `1 / 2^21` of the remaining subsidy. In exact terms:
+- The subsidy each tock is `1 / 2^21` of the remaining subsidy. More precisely,
 	- `subsidy[n] = floor(remaining[n-1] / 2^21)`
 	- `remaining[n] = remaining[n-1] - subsidy[n]`
 - With 57 second tocks, this leads to a half-life of roughly 17 months.
--
 -
