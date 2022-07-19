@@ -6,7 +6,8 @@ public:: true
 	- a [[tick]] is a minicash transaction
 	- a [[tock]] is a minicash block header
 - The minicash spec also defines a [[tack]], which is a convention for chunking transactions
-- These three structures are used in the core message types used to define full node equivalence. All clients must implement these messages, but they can also invent more efficient ones
+- These three structures are used in the core message types used to define full node equivalence. All clients must implement these messages, but they can also invent more efficient ones.
+-
 	-
 -
 	- There are at most `7` inputs and at most `7` outputs per [[tick]].
